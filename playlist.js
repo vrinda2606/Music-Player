@@ -33,7 +33,7 @@ let songs = [
         name : "Ki Kariye - Code Name Tiranga",
         album : "Hardy Sandhu",
         img:"Ki Kariye.jpg",
-        audio:"Ki Kariye - Harrdy Sandhu"
+        audio:"Ki Kariye"
     },
     {
         name : "Love Mera Hit Hit - Billu Barber",
@@ -51,7 +51,7 @@ let songs = [
         name : "Meet - Simran",
         album : "Arijit Singh",
         img:"Meet.jpg",
-        audio:"Meet - Simran"
+        audio:"Meet"
     },
     {
         name : "Namo Namo - Kedarnath",

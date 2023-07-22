@@ -16,6 +16,7 @@ let song = 1;
 
 window.addEventListener("load" , () => {
     loadSong(song);
+    pauseSong();    
 });
 
 function loadSong(index){
@@ -38,14 +39,14 @@ play.addEventListener("click",() =>{
 
 function playSong(){
     content.classList.remove("paused");
-    playIcon.classList.remove("bx-pause");
-    playIcon.classList.add("bx-play-circle");
+    playIcon.classList.remove("bx-play-circle");
+    playIcon.classList.add("bx-pause");
     audio.play();
 }
 function pauseSong(){
     content.classList.add("paused");
-    playIcon.classList.remove("bx-play-circle");
-    playIcon.classList.add("bx-pause");
+    playIcon.classList.remove("bx-pause");
+    playIcon.classList.add("bx-play-circle");
     audio.pause();
 }
 
