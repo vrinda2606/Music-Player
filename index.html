@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class='bx bxl-spotify' ></i>
+        </div>
+        <nav class="navbar">
+            <a href="#" class="home"><i class='bx bxs-album'></i> Home</a>
+            <div class="dropdown">
+                <a href="#" class="songs"><i class='bx bxs-playlist'></i> Genre</a>
+                    <div class="dropdown-content">
+                        <a href="#">Bollywood</a>
+                        <a href="#">Dance</a>
+                        <a href="#">Devotional</a>
+                        <a href="#">Love</a>
+                        <a href="#">Relax</a>
+                    </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="home">
+        <aside class="text">
+            <h4>LET'S BEGIN</h4>
+            <h4>YOUR</h4>
+            <h3>MUSIC JOURNEY...!!!</h3>
+        </aside>
+
+        <section class="music-player">
+            <div class="content">
+                <div class="top-bar">
+                    <span class="circle"><i class='bx bx-chevron-down' ></i></span>
+                    <span>Now playing</span>
+                    <span class="circle"><i class='bx bx-dots-horizontal-rounded' ></i></span>
+                </div>
+
+                <div class="image-container">
+                    <div class="music-image">
+                        <img src="">
+                    </div>
+                </div>
+
+                <div class="music-titles">
+                    <p class="name"></p>
+                    <p class="album"></p>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar">
+                        <span></span>
+                    </div>
+                    <div class="time">
+                        <span class="current">0:00</span>
+                        <span class="end">5:30</span>
+                    </div>
+                    <audio src="" class="main-song" autoplay></audio>
+                </div>
+
+                <div class="controls">
+                    <abbr title="Repeat"><i class='bx bx-sync' id="repeat"></i></abbr>
+                    <abbr title="Previous"><i class='bx bx-skip-previous-circle bx-flip-vertical' id="prev"></i></abbr>
+                    <div class="play-pause">
+                        <abbr class="play-abbr" title="Play"><i class='bx bx-play-circle' id="play"></i></abbr>
+                        <!--<i class='bx bx-pause' ></i>-->
+                    </div>
+                    <abbr title="Next"><i class='bx bx-skip-next-circle bx-flip-vertical' id="next"></i></abbr>
+                    <abbr title="Shuffle"><i class='bx bx-shuffle bx-flip-vertical' id="shuffle"></i></abbr>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="playlist.js"></script>
+</body>
+</html>
